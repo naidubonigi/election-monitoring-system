@@ -1,0 +1,80 @@
+/* src/components/SignUp.css */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e; /* Dark theme background */
+  color: #f5f5f5;
+}
+
+.signup-form {
+  background-color: #2c2c2c; /* Dark form background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out; /* Animation for form */
+}
+
+.signup-form:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  transition: border 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #ff4d4d;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: shake 0.5s; /* Simple shake animation for error */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}

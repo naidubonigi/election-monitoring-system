@@ -1,0 +1,83 @@
+/* src/pages/CitizenPage.css */
+
+.citizen-page-container {
+    padding: 30px;
+    background: linear-gradient(to bottom right, #e3f2fd, #bbdefb); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 40px auto;
+    opacity: 0; /* Initial opacity for animation */
+    animation: fadeIn 0.8s forwards; /* Fade-in animation */
+}
+
+.citizen-page-container h2 {
+    color: #1e88e5; /* Darker blue color for header */
+    font-size: 32px; /* Increased font size */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.citizen-page-container h3 {
+    color: #0d47a1; /* Dark blue for section headers */
+    margin-top: 20px;
+    font-size: 24px; /* Slightly larger font size */
+}
+
+.citizen-page-container p {
+    font-size: 18px; /* Increased font size for better readability */
+    line-height: 1.6;
+    color: #424242; /* Dark gray for paragraph text */
+}
+
+.citizen-page-container section {
+    margin-bottom: 20px;
+    padding: 20px; /* Increased padding for a spacious feel */
+    border: 1px solid #90caf9; /* Light blue border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff; /* White background for sections */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.citizen-page-container section:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.action-button {
+    margin-right: 10px;
+    padding: 12px 18px; /* Increased padding for buttons */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    background-color: #0d47a1; /* Dark blue for buttons */
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger font size */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+}
+
+.action-button:hover {
+    background-color: #1565c0; /* Lighter blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+a {
+    color: #0d47a1; /* Dark blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

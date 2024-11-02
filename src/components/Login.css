@@ -1,0 +1,90 @@
+/* Login.css */
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text color */
+  font-family: 'Arial', sans-serif; /* Font style */
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  animation: fadeIn 0.5s ease; /* Animation */
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+form {
+  background-color: #1e1e1e; /* Slightly lighter dark for the form */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  width: 300px; /* Fixed width */
+  animation: slideIn 0.5s ease; /* Animation */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold; /* Bold labels */
+}
+
+input {
+  width: 100%; /* Full width */
+  padding: 10px;
+  margin: 10px 0; /* Margin around inputs */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners for inputs */
+  background-color: #333; /* Darker input background */
+  color: #ffffff; /* White text color in inputs */
+  transition: background-color 0.3s ease; /* Transition for input background */
+}
+
+input:focus {
+  background-color: #444; /* Change color on focus */
+  outline: none; /* Remove outline */
+}
+
+button {
+  background-color: #6200ea; /* Button color */
+  color: #ffffff; /* White text color */
+  padding: 10px;
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for button color */
+  width: 100%; /* Full width */
+}
+
+button:hover {
+  background-color: #3700b3; /* Darker color on hover */
+}
+
+p {
+  margin: 10px 0; /* Margin for the error message */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    opacity: 1; /* End fully visible */
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px); /* Start from above */
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* End fully visible */
+  }
+}

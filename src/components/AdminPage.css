@@ -1,0 +1,79 @@
+/* src/pages/AdminPage.css */
+
+.admin-page-container {
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+    opacity: 0; /* Initial opacity for animation */
+    animation: fadeIn 0.8s forwards; /* Fade-in animation */
+}
+
+.admin-page-container h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-page-container h3 {
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+.admin-page-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+.admin-page-container section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.admin-page-container section:hover {
+    transform: scale(1.02); /* Slight scale on hover */
+}
+
+.action-button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498DB;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+}
+
+.action-button:hover {
+    background-color: #2980B9;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
